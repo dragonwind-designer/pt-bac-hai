@@ -1,5 +1,21 @@
 import math
+results = []
 
+def solves(x, y, z):
+    global results
+    delta = b ** 2 - 4*a*c
+    if delta >= 0:
+        if delta == 0:
+            x1 = x2 = -y/2*x
+            results = results + [x1]
+        elif delta > 0:
+            x1 = (-y - math.sqrt(delta))/2*x
+            x2 = (-y + math.sqrt(delta))/2*x
+            results = results + [x1] + [x2]
+    elif delta < 0:
+        print("Phuong trinh vo nghiem")
+        results = []
+    print(results)
 
 print("Phuong trinh bac hai co dang: ")
 i = input("Nhap a: ")
@@ -10,20 +26,4 @@ b = int(o)
 c = int(p)
 if a == 0:
     print("Vo so nghiem")
-delta = b ** 2 - 4*a*b
-if a + b + c == 0:
-    x1 = 1
-    x2 = c/a
-elif a - b + c == 0:
-    x1 = -1
-    x2 = -c/a
-elif delta >= 0:
-    if delta == 0:
-        x1 = x2 = -b/2*a
-    elif delta > 0:
-        sqrts = math.sqrt(delta)
-        x1 = (-b - sqrts)/2*a
-        x2 = (-b + sqrts)/2*a
-
-
-print(x1, x2)
+solves(a, b, c)
