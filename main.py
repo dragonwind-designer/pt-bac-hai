@@ -12,8 +12,9 @@ def solves(x, y, z):
             x1 = -1
             x2 = -z/x
         elif delta > 0:
-            x1 = (- y - math.sqrt(delta) ) / 2*x
-            x2 = (- y + math.sqrt(delta) ) / 2*x
+            sqrts = math.sqrt(delta)
+            x1 = (- y - sqrts ) / 2*x
+            x2 = (- y + sqrts ) / 2*x
     results = results + [x1] + [x2]
     print(results)
 
