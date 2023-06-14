@@ -19,12 +19,9 @@ def solves(x, y, z):
     print(results)
 
 print("Phuong trinh bac hai co dang: ")
-i = input("Nhap a: ")
-o = input("Nhap b: ")
-p = input("Nhap c: ")
-a = int(i)
-b = int(o)
-c = int(p)
+a = int(input("Nhap a: "))
+b = int(input("Nhap b: "))
+c = int(input("Nhap c: "))
 if a == 0 :
     print("Vo so nghiem")
 elif b == 0:
