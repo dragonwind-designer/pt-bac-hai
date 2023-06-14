@@ -3,7 +3,7 @@ results = []
 
 def solves(x, y, z):
     global results
-    delta = y ** 2 - 4*x*z
+    delta = y**2 - 4 * x * z
     if delta >= 0:
         if x + y + z == 0:
             x1 = 1
@@ -13,8 +13,8 @@ def solves(x, y, z):
             x2 = -z/x
         elif delta > 0:
             sqrts = math.sqrt(delta)
-            x1 = (- y - sqrts ) / 2*x
-            x2 = (- y + sqrts ) / 2*x
+            x1 = (- (y) - sqrts ) / (2*x)
+            x2 = (- (y) + sqrts ) / (2*x)
     results = results + [x1] + [x2]
     print(results)
 
@@ -25,6 +25,8 @@ p = input("Nhap c: ")
 a = int(i)
 b = int(o)
 c = int(p)
-if a == 0:
+if a == 0 :
+    print("Vo so nghiem")
+elif b == 0:
     print("Vo so nghiem")
 solves(a, b, c)
