@@ -3,7 +3,7 @@ results = []
 
 def solves(x, y, z):
     global results
-    delta = b ** 2 - 4*a*c
+    delta = y ** 2 - 4*x*z
     if delta >= 0:
         if delta == 0:
             x1 = x2 = -y/2*x
