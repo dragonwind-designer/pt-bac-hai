@@ -24,7 +24,7 @@ b = int(input("Nhap b: "))
 c = int(input("Nhap c: "))
 if a == 0:
     print("Khong the nhap so nay, vui long khoi dong lai chuong trinh")
-    b = int(input("Nhap b: "))
+    a = int(input("Nhap b: "))
 if b == 0:
     print("Phuong trinh vo nghiem")
 
